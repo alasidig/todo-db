@@ -5,6 +5,11 @@
   <input type="submit" value="Add"> 
 </form>
 <div>
+  <ul style="color: red">
+  {% for error in errors %}
+  <li>{{ error.msg }}</li>
+  {% endfor %}
+  </ul>
   {% for task in tasks %}
   {% set isDone= "done" if task.done else "" %}
     <p class="{{ isDone }}" >{{task.title|upper}}</p>

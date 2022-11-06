@@ -9,7 +9,7 @@ const getDbConnection = async () => {
 
 async function getAllTasks() {
     const db = await getDbConnection();
-    const rows = await db.all('select * from tasks')
+    const rows = await db.all('select * from tasks order by id desc ')
     await db.close()
     console.log(rows)
     return rows
