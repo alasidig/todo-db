@@ -2,6 +2,7 @@
 A simple example to show how to use the SqLite database to store the ToDo tasks.
 ## How to run
 - the main script is index.js
+- run it on [replit.com](https://replit.com/@alasidig/todo-db#index.js) or locally:
 - run `npm i` to install the dependencies
 - run `node init_db.js` to create the database and the table
 - run `npm run dev` and use the browser to see the list of tasks and add some
